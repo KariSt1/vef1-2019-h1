@@ -4,7 +4,10 @@
   "description": "Hópverkefni 1 í vefforritun 1, hópur 25",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "dev": "concurrently npm:sass npm:sass-watch npm:browser-sync"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "node-sass": "^4.12.0",
-    "sass-watch": "^0.1.0"
+    "concurrently": "^5.0.0",
+    "node-sass": "^4.12.0"
   }
 }

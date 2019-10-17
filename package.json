@@ -1,0 +1,25 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hópverkefni 1 í vefforritun 1, hópur 25",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KariSt1/vef1-2019-h1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KariSt1/vef1-2019-h1/issues"
+  },
+  "homepage": "https://github.com/KariSt1/vef1-2019-h1#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.12.0",
+    "sass-watch": "^0.1.0"
+  }
+}

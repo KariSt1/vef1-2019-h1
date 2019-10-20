@@ -1,0 +1,77 @@
+@import "config";
+
+.menu {
+  font-family: $font-main;
+  text-align: center;
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    @include columns(12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: $gutter *0.5;
+
+    @media (min-width: 800px) {
+      @include columns(5);
+      margin-left: ($column-margin*3.5)*1%;
+      margin-bottom: $gutter;
+    }
+  }
+
+  &__item {
+    margin-right: $gutter * 0.5;
+    margin-left: $gutter *0.5;
+  }
+
+  &__link {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color1;
+
+    transition: color $transition;
+    &:hover {
+      color: $color2;
+    }
+  }
+
+  &__item--selected {
+    text-decoration: underline;
+  }
+
+  &__cart {
+    @include columns(12);
+    display: flex;
+    justify-content: center;
+    margin-bottom: $gutter * 0.5;
+
+    @media (min-width: 800px) {
+      @include columns(2);
+      margin-left: ($column-margin)*1%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__button {
+    padding-left: $gutter * 1.5;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $color1;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+
+        transition: color $transition;
+    &:hover {
+      color: $color2;
+    }
+  }
+}

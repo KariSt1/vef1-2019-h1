@@ -17,7 +17,19 @@ html { /* stylelint-disable-line */
 
   // TODO fleiri grunn stillingar
   font-size: 16px;
+  font-family: $font-main;
+}
+
+main { /* stylelint-disable-line */
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+img { /* stylelint-disable-line */
+  width: 100%
 }
 
 // TODO sækja allar sass skrár
-@import "scss/...";
+@import "scss/header";
+@import "scss/menu";
+@import "scss/footer";

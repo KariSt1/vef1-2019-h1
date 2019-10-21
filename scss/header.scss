@@ -2,6 +2,8 @@
 
 .header {
   background-color: $color3;
+  padding-right: $gutter;
+  padding-left: $gutter;
 
   &__title {
     font-family: $font-header;

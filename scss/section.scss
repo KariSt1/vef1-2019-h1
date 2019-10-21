@@ -20,6 +20,9 @@
     @media (min-width: 800px) {
       @include columns(6);
     }
+    @media (min-width: $max-width) {
+      padding-left: -($gutter /2);
+    }
   }
   
   &__content {

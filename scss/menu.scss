@@ -22,6 +22,7 @@
     @media (min-width: 800px) {
       @include columns(5);
       margin-left: ($column-margin*3.5)*1%;
+      margin-right: ($column-margin*1.5)*1%;
       margin-bottom: $gutter;
     }
   }
@@ -56,8 +57,12 @@
 
     @media (min-width: 800px) {
       @include columns(2);
-      margin-left: ($column-margin)*1%;
+      //margin-left: ($column-margin*1.5)*1%;
+      //padding-right: $gutter *1.5;
       justify-content: flex-end;
+    }
+    @media (min-width: $max-width) {
+      padding-right: $gutter * 0.5;
     }
   }
 

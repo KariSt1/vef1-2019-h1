@@ -4,7 +4,6 @@
   display: inline-block;
   width: 100%;
   max-width: $gutter *13;
-  border: 1px solid $color4;
   border-radius: 4px;
   background-color: $color4;
   color: $color1;
@@ -18,12 +17,10 @@
 
   transition:
     background-color $transition,
-    border-color $transition,
     color $transition;
 
   &:hover {
     background-color: $color3;
-    border-color: $color3;
     color: $color2;
   }
 

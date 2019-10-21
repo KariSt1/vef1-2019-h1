@@ -1,0 +1,30 @@
+@import "scss/config";
+
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: $gutter *13;
+  border: 1px solid $color4;
+  border-radius: 4px;
+  background-color: $color4;
+  color: $color1;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: ($gutter * 0.5) ($gutter * 0.5);
+  margin: 0;
+  font-size: 1.125rem; //18/16
+  font-family: $font-main;
+
+  transition:
+    background-color $transition,
+    border-color $transition,
+    color $transition;
+
+  &:hover {
+    background-color: $color3;
+    border-color: $color3;
+    color: $color2;
+  }
+
+}

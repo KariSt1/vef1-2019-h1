@@ -23,5 +23,5 @@ $column-margin: 100/12;
 @mixin columns($col: 1) {
   width: ($col / 12 * 100)*1%;
   padding-right: $gutter / 2;
-  padding-left: $gutter / 2;
+  padding-left: $gutter / 2; 
 }

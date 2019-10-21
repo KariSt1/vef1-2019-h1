@@ -26,10 +26,12 @@ main { /* stylelint-disable-line */
 }
 
 img { /* stylelint-disable-line */
-  width: 100%
+  max-width: 100%
 }
 
 // TODO sækja allar sass skrár
 @import "scss/header";
 @import "scss/menu";
 @import "scss/footer";
+@import "scss/section";
+@import "scss/button";

@@ -1,0 +1,66 @@
+@import "scss/config";
+
+.home {
+  width: 100%;
+  margin-top: $gutter *2;
+  margin-bottom: $gutter *2;
+
+  @media (min-width: 800px) {
+    padding-right: $gutter *0.5;
+    padding-left: $gutter *0.5;
+    margin-bottom: $gutter *4;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__col {
+    @include columns(12); 
+
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+    @media (min-width: $max-width) {
+      padding-left: -($gutter /2);
+    }
+  }
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: $gutter *0.5;
+    padding-right: $gutter *0.5;
+    margin-bottom: $gutter *2;
+
+    @media (min-width: 800px) {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+  }
+  
+  &__header {
+    font-family: $font-header;
+    font-weight: 700;
+    font-size: 2.25rem; //36/16
+    margin-bottom: $gutter *2;
+  }
+  
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: $gutter *2;
+  }
+
+  &__img {
+    padding-left: $gutter *0.5;
+    padding-right: $gutter *0.5;
+    @media (min-width: 800px) {
+      padding: 0;
+    }
+
+  }
+
+  &--differentlayout {
+    flex-direction: row-reverse;
+  }
+}

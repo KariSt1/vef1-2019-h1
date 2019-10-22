@@ -3,18 +3,33 @@
 .product {
   display:flex;
   flex-wrap: wrap;
+  height: 100%;
+  margin-bottom: $gutter *2;
   &__img {
     @include columns(12);
+    
+    @media (min-width: 800px) {
+      @include columns(4);
+    }
+  }
+  
+  &__info {
+
+    @include columns(12);
+    display: flex;
+    flex-direction: column;
+  
+    @media (min-width: 800px) {
+      @include columns(8);
+    }
   }
 
   &__content {
-    @include columns(12);
-  }  
-  
-  &__data {
-    @include columns(12);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
-
+  
   &__header {
     font-family: $font-header;
     font-weight: 700;
@@ -25,12 +40,67 @@
   &__text {
     font-size: 1rem;
     margin-bottom: $gutter * 0.5;
+
+    @media (min-width: 800px) {
+      margin-bottom: $gutter *2;
+    }
   }
   
   &__price {
     font-family: $font-header;
     font-weight: 700;
-    font-size: 1.3125rem;
+    font-size: 1.5rem;
     margin-bottom: $gutter * 0.5;
+  }
+
+  &__data {
+    font-family: $font-main;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  &__label {
+    font-family: $font-main;
+  }
+  
+  &__input {
+    display: block;
+    font-family: $font-main;
+    font-size: 1rem;
+    border: 1px solid $color1;
+    border-radius: 4px;
+    color: $color1;
+    padding: ($gutter * 0.5) ($gutter * 0.5);
+    width: $gutter *5;
+  }
+
+  &__button {
+    font-family: $font-main;
+    font-size: 1rem;
+    display: inline-block;
+    border: 1px solid $color1;
+    border-radius: 4px;
+    color: $color1;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: ($gutter * 0.5) ($gutter * 0.5);
+    padding-left: $gutter *2;
+    margin-right: $gutter *0.25;
+    margin-left: $gutter *0.25;
+
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    background-position-x: $gutter * 0.5;
+    background-position-y: center;
+    background-size: 1.3125rem; //21/16
+    transition:
+      background-color $transition,
+      color $transition;
+  
+    &:hover {
+      background-color: $color4;
+    }
   }
 }

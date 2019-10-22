@@ -1,0 +1,80 @@
+@import "config";
+
+.form {
+  margin-bottom: $gutter *2;
+  margin-left: $gutter*0.5;
+  margin-right: $gutter*0.5;
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    @include columns(12);
+
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+  }
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__legend {
+    font-family: $font-header;
+    font-weight: 700;
+    font-size: 2.25rem; //36/16
+    margin-bottom: $gutter * 0.5;
+  }
+
+  &__option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $gutter;
+  }
+
+  &__label {
+    font-family: $font-main;
+    font-size: 1rem;
+    flex: 0 1 ($gutter * 7);
+  }
+
+  &__input {
+    font-family: $font-main;
+    font-size: 1rem;
+    border: 1px solid $color1;
+    border-radius: 4px;
+    color: $color1;
+    padding: ($gutter * 0.25);
+    flex: 1;
+  }
+  
+  &__select {
+    font-family: $font-main;
+    font-size: 1rem;
+    border: 1px solid $color1;
+    border-radius: 4px;
+    color: $color1;
+    padding: ($gutter * 0.25);
+    flex: 1;
+  }
+
+  &__expiration {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__expiration &__select,
+  &__expiration &__label {
+    flex: 0;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+    margin-top: $gutter;
+  }
+}

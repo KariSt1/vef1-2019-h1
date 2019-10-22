@@ -2,26 +2,19 @@
 
 .product {
   display:flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
+  flex-direction: column;
   height: 100%;
-  margin-bottom: $gutter *2;
-  &__img {
-    @include columns(12);
-    
-    @media (min-width: 800px) {
-      @include columns(4);
-    }
-  }
-  
-  &__info {
+  //padding-right: $gutter *0.5;
+  //padding-left: $gutter *0.5;
 
-    @include columns(12);
+
+
+  &__info {
     display: flex;
     flex-direction: column;
-  
-    @media (min-width: 800px) {
-      @include columns(8);
-    }
+    justify-content: space-between;
+    flex: 1;
   }
 
   &__content {
@@ -39,11 +32,12 @@
   
   &__text {
     font-size: 1rem;
+    flex: 1;
     margin-bottom: $gutter * 0.5;
 
-    @media (min-width: 800px) {
-      margin-bottom: $gutter *2;
-    }
+    //@media (min-width: 800px) {
+    //  margin-bottom: $gutter *2;
+    //}
   }
   
   &__price {
@@ -57,10 +51,12 @@
     font-family: $font-main;
     display: flex;
     align-items: flex-end;
+    margin-bottom: $gutter *2;
   }
   
   &__label {
     font-family: $font-main;
+    flex: 1;
   }
   
   &__input {
@@ -71,7 +67,7 @@
     border-radius: 4px;
     color: $color1;
     padding: ($gutter * 0.5) ($gutter * 0.5);
-    width: $gutter *5;
+    width: 100%;
   }
 
   &__button {
@@ -102,5 +98,42 @@
     &:hover {
       background-color: $color4;
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  &--cart {
+
+    @include row();
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: $gutter *2;
+  }
+
+  &--cart &__img {
+    @include columns(12);
+    
+    @media (min-width: 800px) {
+      @include columns(4);
+    }
+  }
+  
+  &--cart &__info {
+
+    @include columns(12);
+  
+    @media (min-width: 800px) {
+      @include columns(8);
+    }
+  }
+
+  &--cart &__label {
+    flex: 0 1 100px;
+  }
+
+  &--cart &__data {
+    margin-bottom: 0;
   }
 }

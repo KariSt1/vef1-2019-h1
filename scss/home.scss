@@ -1,6 +1,6 @@
 @import "scss/config";
 
-.section {
+.home {
   width: 100%;
   margin-top: $gutter *2;
   margin-bottom: $gutter *2;
@@ -51,7 +51,7 @@
     margin-bottom: $gutter *2;
   }
 
-  &__pic {
+  &__img {
     padding-left: $gutter *0.5;
     padding-right: $gutter *0.5;
     @media (min-width: 800px) {

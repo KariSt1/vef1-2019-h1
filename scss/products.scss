@@ -1,0 +1,31 @@
+@import "config";
+
+.products {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  padding-right: $gutter *0.5;
+  padding-left: $gutter *0.5;
+  margin-top: $gutter *2;
+
+  &__pselection {
+    @include row();
+    margin-bottom: $gutter *2;
+    flex-wrap: wrap;
+    padding-right: $gutter *0.5;
+    padding-left: $gutter *0.5;
+  }
+
+  &__col {
+    @include columns(12);
+
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+    
+    @media (min-width: $max-width) {
+      @include columns(4);
+    }
+  }
+  
+}

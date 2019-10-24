@@ -109,6 +109,7 @@
     @include row();
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
     margin-bottom: $gutter *2;
   }
 
@@ -126,6 +127,7 @@
   
     @media (min-width: 800px) {
       @include columns(8);
+      padding-left: -($gutter *0.5);
     }
   }
 

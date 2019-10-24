@@ -1,0 +1,56 @@
+@import "config";
+
+.course {
+  font-family: $font-main;
+  padding-right: $gutter *0.5;
+  padding-left: $gutter *0.5;
+  margin-top: $gutter*2;
+  
+  &__content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $gutter*2;
+  @media (min-width: 800px){
+    margin-bottom: $gutter*4;
+  }
+  @media (min-width: $max-width){
+    margin-bottom: $gutter*2;
+  }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $gutter*3;
+    @include columns(12);
+    @media (min-width: 800px){
+      @include columns(6);
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__header {
+    font-family: $font-header;
+    font-size: 2rem; //60/16
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: $gutter*2.5;
+  }
+
+  &__text {
+    font-family: $font-main;
+    font-size: 1.5rem;
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    padding-left: $gutter *0.5;
+    padding-right: $gutter *0.5;
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+  }
+}

@@ -12,6 +12,10 @@ Til að keyra verkefnið:
 npm install
 npm run dev
 ```
+Ef villa kemur við keyrslu þarf mögulega að installa eftirfarandi:
+```sh
+npm install @primer/css
+```
 
 Til að linta verkefni:
 

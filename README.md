@@ -35,7 +35,7 @@ Við skiptum ýmsum elementum síðunnar niður í sér scss skrár sem staðset
 `header.scss` sem nær utan um allan hausinn og síðan `menu.scss` sem hefur hlekki yfir á allar undirsíður
 verkefisins. Fyrir fótinn var gerð `footer.scss` skrá.
   * Fyrir `index.html` var gerð `home.scss` skrá ásamt `button.scss` skrá sem einnig var notuð á öðrum stöðum.
-  * Fyrir `products.html` var gerð products.scss skrá ásamt `product.scss` skrá sem einnig var notuð á öðrum stöðum.
+  * Fyrir `products.html` var gerð `products.scss` skrá ásamt `product.scss` skrá sem einnig var notuð á öðrum stöðum.
   * Fyrir `course.html` var gerð `course.scss` skrá ásamt `form.scss` skrá sem einnig var notuð á öðrum stöðum.
 Hér var einnig notast við `button.scss` skránna aftur.
   * Fyrir `staff.html` var gerð `staff.scss` skrá.

@@ -17,14 +17,14 @@
   }
 
   &__fieldset {
-    border: none;
+    border: 0;
   }
 
   &__legend {
-    font-family: $font-header;
-    font-weight: 700;
-    font-size: 2.25rem; //36/16
     margin-bottom: $gutter * 0.5;
+    font-family: $font-header;
+    font-size: 2.25rem; //36/16
+    font-weight: 700;
   }
 
   &__option {
@@ -40,22 +40,22 @@
   }
 
   &__input {
+    padding: ($gutter * 0.25);
     font-family: $font-main;
     font-size: 1rem;
+    color: $color1;
     border: 1px solid $color1;
     border-radius: 4px;
-    color: $color1;
-    padding: ($gutter * 0.25);
     flex: 1;
   }
-  
+
   &__select {
+    padding: ($gutter * 0.25);
     font-family: $font-main;
     font-size: 1rem;
+    color: $color1;
     border: 1px solid $color1;
     border-radius: 4px;
-    color: $color1;
-    padding: ($gutter * 0.25);
     flex: 1;
   }
 

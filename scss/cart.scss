@@ -2,7 +2,7 @@
 
 .cart {
   padding-right: $gutter;
-  padding-left: $gutter; 
+  padding-left: $gutter;
   margin-top: $gutter *2;
 
   &__container {
@@ -15,14 +15,14 @@
   }
 
   &__header {
-    font-family: $font-header;
-    font-weight: 700;
-    font-size: 2.25rem; //36/16
     margin-bottom: $gutter *2;
+    font-family: $font-header;
+    font-size: 2.25rem; //36/16
+    font-weight: 700;
   }
 
   &__products {
-    margin-bottom: $gutter *2;
     width: 100%;
+    margin-bottom: $gutter *2;
   }
 }

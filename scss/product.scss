@@ -1,9 +1,9 @@
 @import "config";
 
 .product {
-  display:flex;
-  flex-direction: column;
+  display: flex;
   height: 100%;
+  flex-direction: column;
 
   &__info {
     display: flex;
@@ -14,78 +14,77 @@
 
   &__content {
     display: flex;
-    flex-direction: column;
     height: 100%;
+    flex-direction: column;
   }
-  
+
   &__header {
-    font-family: $font-header;
-    font-weight: 700;
-    font-size: 2.25rem; //36/16
     margin-bottom: $gutter * 0.5;
+    font-family: $font-header;
+    font-size: 2.25rem; //36/16
+    font-weight: 700;
   }
-  
+
   &__text {
+    margin-bottom: $gutter * 0.5;
     font-size: 1rem;
     flex: 1;
-    margin-bottom: $gutter * 0.5;
   }
-  
+
   &__price {
-    font-family: $font-header;
-    font-weight: 700;
-    font-size: 1.5rem;
     margin-bottom: $gutter * 0.5;
+    font-family: $font-header;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   &__data {
-    font-family: $font-main;
     display: flex;
     align-items: flex-end;
     margin-bottom: $gutter *2;
+    font-family: $font-main;
   }
-  
+
   &__label {
     font-family: $font-main;
     flex: 1;
   }
-  
+
   &__input {
     display: block;
+    width: 100%;
+    padding: ($gutter * 0.5) ($gutter * 0.5);
     font-family: $font-main;
     font-size: 1rem;
+    color: $color1;
     border: 1px solid $color1;
     border-radius: 4px;
-    color: $color1;
-    padding: ($gutter * 0.5) ($gutter * 0.5);
-    width: 100%;
   }
 
   &__button {
-    font-family: $font-main;
-    font-size: 1rem;
     display: inline-block;
-    border: 1px solid $color1;
-    border-radius: 4px;
-    color: $color1;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
     padding: ($gutter * 0.5) ($gutter * 0.5);
     padding-left: $gutter *2;
     margin-right: $gutter *0.25;
     margin-left: $gutter *0.25;
-
+    font-family: $font-main;
+    font-size: 1rem;
+    color: $color1;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
     background-image: url("../img/cart.svg");
     background-repeat: no-repeat;
     background-position-x: $gutter * 0.5;
     background-position-y: center;
     background-size: 1.3125rem; //21/16
+    border: 1px solid $color1;
+    border-radius: 4px;
     transition:
       background-color $transition,
       color $transition;
-  
+
     &:hover {
       background-color: $color4;
     }
@@ -94,26 +93,27 @@
       margin-right: 0;
     }
   }
-  
+
   &--cart {
     height: auto;
+
     @media (min-width: 800px) {
-    flex-direction: row;
-    margin-bottom: $gutter *2;
+      margin-bottom: $gutter *2;
+      flex-direction: row;
     }
   }
 
   &--cart &__img {
     @include columns(12);
-    
+
     @media (min-width: 800px) {
       @include columns(4);
     }
   }
-  
+
   &--cart &__info {
     @include columns(12);
-  
+
     @media (min-width: 800px) {
       @include columns(8);
     }

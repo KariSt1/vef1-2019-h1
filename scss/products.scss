@@ -1,19 +1,20 @@
 @import "config";
 
 .products {
-  //max-width: $max-width;
-  //margin: 0 auto;
-
-  padding-right: $gutter *0.5;
-  padding-left: $gutter *0.5;
+  width: 100%;
+  padding-right: $gutter; 
+  padding-left: $gutter; 
   margin-top: $gutter *2;
 
   &__pselection {
-    @include row();
+    max-width: $max-width;
     margin-bottom: $gutter *2;
+    margin: 0 auto;
+  }
+  
+  &__row {
+    @include row();
     flex-wrap: wrap;
-    padding-right: $gutter *0.5;
-    padding-left: $gutter *0.5;
   }
 
   &__col {

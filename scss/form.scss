@@ -2,8 +2,6 @@
 
 .form {
   margin-bottom: $gutter *2;
-  margin-left: $gutter*0.5;
-  margin-right: $gutter*0.5;
 
   &__row {
     @include row();

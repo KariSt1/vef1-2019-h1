@@ -2,13 +2,8 @@
 
 .product {
   display:flex;
-  //flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
-  //padding-right: $gutter *0.5;
-  //padding-left: $gutter *0.5;
-
-
 
   &__info {
     display: flex;
@@ -34,10 +29,6 @@
     font-size: 1rem;
     flex: 1;
     margin-bottom: $gutter * 0.5;
-
-    //@media (min-width: 800px) {
-    //  margin-bottom: $gutter *2;
-    //}
   }
   
   &__price {
@@ -105,12 +96,11 @@
   }
   
   &--cart {
-
-    @include row();
+    height: auto;
+    @media (min-width: 800px) {
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
     margin-bottom: $gutter *2;
+    }
   }
 
   &--cart &__img {
@@ -122,12 +112,10 @@
   }
   
   &--cart &__info {
-
     @include columns(12);
   
     @media (min-width: 800px) {
       @include columns(8);
-      padding-left: -($gutter *0.5);
     }
   }
 

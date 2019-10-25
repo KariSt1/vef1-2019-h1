@@ -2,9 +2,19 @@
 
 .course {
   font-family: $font-main;
-  padding-right: $gutter *0.5;
-  padding-left: $gutter *0.5;
+  padding-right: $gutter;
+  padding-left: $gutter;
   margin-top: $gutter*2;
+  
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+  }
   
   &__content{
   display: flex;

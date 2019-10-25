@@ -1,20 +1,28 @@
 @import "config";
 
 .cart {
-  padding-right: $gutter *0.5;
-  padding-left: $gutter *0.5;
+  padding-right: $gutter;
+  padding-left: $gutter; 
   margin-top: $gutter *2;
+
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__row {
+    @include row();
+  }
 
   &__header {
     font-family: $font-header;
     font-weight: 700;
     font-size: 2.25rem; //36/16
     margin-bottom: $gutter *2;
-    padding-right: $gutter *0.5;
-    padding-left: $gutter *0.5;
   }
 
   &__products {
     margin-bottom: $gutter *2;
+    width: 100%;
   }
 }

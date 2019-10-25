@@ -2,38 +2,40 @@
 
 .home {
   width: 100%;
+  padding-left: $gutter;
+  padding-right: $gutter;
   margin-top: $gutter *2;
   margin-bottom: $gutter *2;
 
   @media (min-width: 800px) {
-    padding-right: $gutter *0.5;
-    padding-left: $gutter *0.5;
     margin-bottom: $gutter *4;
   }
 
-  display: flex;
-  flex-wrap: wrap;
   
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+  }
+
   &__col {
     @include columns(12); 
 
     @media (min-width: 800px) {
       @include columns(6);
     }
-    @media (min-width: $max-width) {
-      padding-left: -($gutter *0.5);
-    }
   }
   
   &__content {
     display: flex;
     flex-direction: column;
-    padding-left: $gutter *0.5;
-    padding-right: $gutter *0.5;
     margin-bottom: $gutter *2;
 
     @media (min-width: 800px) {
-      padding: 0;
       margin-bottom: 0;
     }
 
@@ -51,16 +53,7 @@
     margin-bottom: $gutter *2;
   }
 
-  &__img {
-    padding-left: $gutter *0.5;
-    padding-right: $gutter *0.5;
-    @media (min-width: 800px) {
-      padding: 0;
-    }
-
-  }
-
-  &--differentlayout {
+  &--differentlayout &__row{
     flex-direction: row-reverse;
   }
 }

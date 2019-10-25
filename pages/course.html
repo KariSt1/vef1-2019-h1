@@ -31,101 +31,106 @@
 
   <main>
     <div class="course">
-      <div class="course__content">
-      <div class="course__info">
-        <h2 class="course__header">Námskeið</h2>
-        <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin
-          eru
-          kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-      </div>
-      <div class="course__img">
-        <img src="../img/climbing-gym.jpg">
-      </div>
-    </div>
-      <div class="course__form">
-        <form class="form" method="get" action="course.html">
-          <div class="form__row">
-            <div class="form__col">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Almennar upplýsingar</legend>
-
-                <div class="form__option">
-                  <label class="form__label" for="name">Nafn:</label>
-                  <input class="form__input" type="text" id="name">
-                </div>
-
-                <div class="form__option">
-                  <label class="form__label" for="address">Heimilisfang:</label>
-                  <input class="form__input" type="text" id="address">
-                </div>
-
-                <div class="form__option">
-                  <label class="form__label" for="age">Aldur:</label>
-                  <input class="form__input" type="text" id="age">
-                </div>
-
-                <div class="form__option">
-                  <label class="form__label" for="course">Námskeið:</label>
-                  <select class="form__select" id="course">
-                    <option>V0 - V1</option>
-                    <option>V2 - V4</option>
-                    <option>V5 - V7</option>
-                    <option>Krakkanámskeið</option>
-                    <option>Fjallaklifur</option>
-                  </select>
-                </div>
-              </fieldset>
+      <div class="course__container">
+        <div class="course__row">
+          <div class="course__content">
+            <div class="course__info">
+              <h2 class="course__header">Námskeið</h2>
+              <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna.
+                Námskeiðin
+                eru
+                kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
             </div>
-
-            <div class="form__col">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Greiðsluupplýsingar</legend>
-
-                <div class="form__option">
-                  <label class="form__label" for="cardnumber">Kortanúmer:</label>
-                  <input class="form__input" type="text" id="cardnumber">
-                </div>
-
-                <div class="form__option">
-                  <label class="form__label" for="cardholder">Korthafi:</label>
-                  <input class="form__input" type="text" id="cardholder">
-                </div>
-
-                <div class="form__option">
-                  <div class="form__label">Gildistími:</div>
-                  <div class="form__expiration">
-                    <label class="form__label" for="month">Mán</label>
-                    <select class="form__select" id="month">
-                      <option>01</option>
-                      <option>02</option>
-                      <option>03</option>
-                      <option>04</option>
-                      <option>05</option>
-                      <option>06</option>
-                      <option>07</option>
-                      <option>08</option>
-                      <option>09</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                    </select>
-
-                    <label class="form__label" for="year">Ár</label>
-                    <select class="form__select" id="year">
-                      <option>2019</option>
-                      <option>2020</option>
-                      <option>2021</option>
-                      <option>2022</option>
+            <div class="course__img">
+              <img src="../img/climbing-gym.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="course__form">
+          <form class="form" method="get" action="course.html">
+            <div class="form__row">
+              <div class="form__col">
+                <fieldset class="form__fieldset">
+                  <legend class="form__legend">Almennar upplýsingar</legend>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="name">Nafn:</label>
+                    <input class="form__input" type="text" id="name">
+                  </div>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="address">Heimilisfang:</label>
+                    <input class="form__input" type="text" id="address">
+                  </div>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="age">Aldur:</label>
+                    <input class="form__input" type="text" id="age">
+                  </div>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="course">Námskeið:</label>
+                    <select class="form__select" id="course">
+                      <option>V0 - V1</option>
+                      <option>V2 - V4</option>
+                      <option>V5 - V7</option>
+                      <option>Krakkanámskeið</option>
+                      <option>Fjallaklifur</option>
                     </select>
                   </div>
-                </div>
-              </fieldset>
+                </fieldset>
+              </div>
+  
+              <div class="form__col">
+                <fieldset class="form__fieldset">
+                  <legend class="form__legend">Greiðsluupplýsingar</legend>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="cardnumber">Kortanúmer:</label>
+                    <input class="form__input" type="text" id="cardnumber">
+                  </div>
+  
+                  <div class="form__option">
+                    <label class="form__label" for="cardholder">Korthafi:</label>
+                    <input class="form__input" type="text" id="cardholder">
+                  </div>
+  
+                  <div class="form__option">
+                    <div class="form__label">Gildistími:</div>
+                    <div class="form__expiration">
+                      <label class="form__label" for="month">Mán</label>
+                      <select class="form__select" id="month">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+  
+                      <label class="form__label" for="year">Ár</label>
+                      <select class="form__select" id="year">
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
             </div>
-          </div>
-          <div class="form__submit">
-            <button class="button">Skrá</button>
-          </div>
-        </form>
+            <div class="form__submit">
+              <button class="button">Skrá</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </main>

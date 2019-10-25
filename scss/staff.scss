@@ -3,12 +3,9 @@
 .staff{
   font-size: 1.5rem;
   width: 100%;
-  padding-left: $gutter*0.5;
-  padding-right: $gutter*0.5;
-  @media (min-width: $max-width){
-    padding-left: 0;
-    padding-right: 0;
-  }
+  padding-left: $gutter; 
+  padding-right: $gutter; 
+  margin-top: $gutter*2;
   
   &__header {
     font-family: $font-header;
@@ -17,11 +14,15 @@
     margin-bottom: $gutter*0.5;
   }
 
-  margin-top: $gutter*2;
   &__cards{
-    display: flex;
-    flex-wrap: wrap;
+    max-width: $max-width;
+    margin: 0 auto;
     margin-bottom: $gutter*2;
+  }
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
   }
   &__container{
     position: relative;
